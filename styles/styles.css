@@ -49,6 +49,29 @@
     animation: jump 700ms ease-out;
 }
 
+.gameOver{
+    border: none;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.gameOver__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+.gameOver__h1{
+    cursor: pointer;
+}
+
 @keyframes tube-animation {
     from{
         right: 0;
@@ -83,15 +106,15 @@
     0%{
         bottom: 0;
     }   
-    /* 40%{
+    40%{
         bottom: 180px;
-    } */
+    }
     50%{
         bottom: 180px;
     }
-    /* 60%{
+    60%{
         bottom: 180px;
-    }  */
+    } 
     100%{
         bottom: 180px;
     }
